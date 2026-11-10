@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/tad15/AnimeLover/releases/latest"><img src="https://img.shields.io/github/v/release/tad15/AnimeLover?label=version&color=ff5f8a&style=for-the-badge" alt="Latest version"></a>
-  <a href="https://github.com/tad15/AnimeLover/releases"><img src="https://img.shields.io/github/downloads/tad15/AnimeLover/total?label=downloads&color=7c3aed&style=for-the-badge" alt="Downloads"></a>
+  <a href="https://github.com/tad15/AnimeLover/releases"><img src="https://img.shields.io/github/downloads/tad15/AnimeLover/total?label=downloads&color=7c3aed&style=for-the-badge&cacheSeconds=300" alt="Downloads"></a>
   <img src="https://img.shields.io/badge/Android-8.0%2B-3ed39a?style=for-the-badge&logo=android&logoColor=white" alt="Android 8.0+">
   <img src="https://img.shields.io/badge/Google%20TV-yes-4da3ff?style=for-the-badge&logo=googletv&logoColor=white" alt="Google TV">
 </p>
