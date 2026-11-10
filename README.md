@@ -129,12 +129,12 @@ Sources outside French come from the *Anix* extensions catalog (MIT license), se
 **On Google TV**
 1. Install the **Downloader** app from the TV's Play Store.
 2. Enter the code `3721658`, then install the downloaded file.
-3. Or, once installed: on the TV, open AnimeLover › Paramètres (Settings) › Compte (Account) › **Connecter le téléphone** (Connect the phone) and scan the QR code with your phone.
+3. Or, once installed: on the TV, open AnimeLover › Settings › Account › **Connect the phone** and scan the QR code with your phone.
 
 **Updates**: the app offers them by itself at launch.
-You can also go to Paramètres (Settings) › Compte (Account) › **Rechercher une mise à jour** (Check for updates).
+You can also go to Settings › Account › **Check for updates**.
 
-> The app's interface is in French or English: Paramètres (Settings) › Compte (Account) › Langue de l'application (App language).
+> The app's interface is in French or English: Settings › Account › **App language**.
 
 ---
 
