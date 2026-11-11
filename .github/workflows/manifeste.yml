@@ -1,0 +1,36 @@
+# Recopie ici le manifeste des adresses publié sur animelover.pp.ua.
+# L'application lit le site en premier ; cette copie ne sert que si le site ne répond pas.
+name: Copie du manifeste
+
+on:
+  schedule:
+    - cron: "17 * * * *"      # toutes les heures
+  workflow_dispatch:           # et à la demande, depuis l'onglet Actions
+
+permissions:
+  contents: write
+
+jobs:
+  copier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Aller chercher le manifeste du site
+        run: |
+          curl -fsS --max-time 30 https://animelover.pp.ua/manifeste.json -o neuf.json
+          python3 -c "import json,sys; d=json.load(open('neuf.json')); assert isinstance(d.get('adresses'), dict), 'format inattendu'; print('adresses modifiées :', len(d['adresses']))"
+
+      - name: Enregistrer si le fichier a changé
+        run: |
+          if [ -f manifeste.json ] && cmp -s neuf.json manifeste.json; then
+            rm neuf.json
+            echo "rien de neuf"
+            exit 0
+          fi
+          mv neuf.json manifeste.json
+          git config user.name "AnimeLover"
+          git config user.email "animelover.app@gmail.com"
+          git add manifeste.json
+          git commit -m "Manifeste : copie du $(date -u '+%d/%m/%Y %H:%M UTC')"
+          git push
